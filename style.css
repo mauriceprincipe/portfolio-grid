@@ -1,0 +1,37 @@
+/* CSS files add styling rules to your content */
+body {
+  font-family: open sans, fantasy;
+  background: #936E20;
+}
+
+nav a:visited {
+  color: blue;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.container {
+  border: 5  px solid black;
+  padding: 4px 16px;
+}
+
+.two {
+  color: red;
+}
+
+.one {
+  color: white;
+}
+
+#logo {
+  display: inline-block;
+  background-image: url(https://i.pinimg.com/originals/fd/18/c6/fd18c6d26d4d9d26a0bd9d1a2fb2bd04.png);
+  background-size: 100%;
+  background-position: center;
+  width: 200px;
+  height: 64px;
+/*   text-indent: -100%; */
+  color: rgba(0, 0, 0, 0)
+}
