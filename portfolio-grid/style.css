@@ -1,0 +1,337 @@
+/* CSS files add styling rules to your content */
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #FFFFFF;
+  color: black;
+  font-weight: lighter;
+  text-align: left;
+  padding-top: 64px;
+  margin: 0px;
+}
+
+body.fullscreen {
+  padding-top: 0px;
+}
+
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+
+/*display flex needs to be writtenbefore giving the flex boxes any properties*/
+/*box-sizing added to take into account the padding and the overall width of the page*/
+/* navbar */
+.topnav{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 64px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.nav-left {
+  text-align: left;
+  flex: 1;
+}
+.nav-right {
+  text-align: right;
+}
+.navlink {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+}
+.navlink:hover{
+  color: #996515;
+}
+
+#topnav{
+  position: fixed;
+}
+
+/*styles for different media break points go here*/
+
+/* vh means view height 100 = 100%, etc */
+/* border box calcuation of height and width*/
+.page {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* page1 */
+.intro-page {
+  padding: 50px;
+}
+
+
+/* page2 */
+.flex-page img {
+  width: 75%;
+  height: auto;
+  border-width: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+
+}
+
+#img-spread {
+  border-color: #99f9ff;
+}
+
+/*millennial musings*/
+
+.millennialmusings-images image-container{
+  width: 100%;
+  height: auto;
+  border-color: #99f9ff;
+  border-style: solid;
+  border-width: 5px; 
+}
+
+
+
+
+/*About Bio*/
+
+.about-bio {
+  font-size: 1;
+  font-weight: 400;
+  text-align: left;
+  margin: 10px;
+}
+.about-copy {
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+
+/*Contact Form*/
+
+
+.contact-form {
+  margin: 100px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  font-size: 16px;
+  background-color: pink;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: gold;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+#thumb-hover {
+  background-color: pink;
+}
+
+
+/* this is the physical shape of the box */
+.cta {
+  font-size: 16px;
+  background-color: pink;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* this is the child of H2 so it falls under this section. the 50px padding is what separates the physical cta and H2*/
+.cta-container {
+  padding-top: 25px;
+}
+
+.flex-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+}
+/* two colums will take up the same amount. flex-page & div together targets direct children within that tag.*/
+
+
+/*project-page*/
+/*image and copy will be stacked on top of each other in one column*/
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.project-images img {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*.flex-page img {
+  width: 100%;
+  height: auto;
+  border-width: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+
+*/}
+
+/*work thumbail*/
+/*.thumbnail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}*/
+
+/*.project-copy {
+  width: 30%; 
+}*/
+
+/*.project-thumbail {
+  width: 10%;
+}
+
+.project-thumbnail img {
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+}*/
+
+
+
+
+@media (min-width: 360px){
+    html {
+      font-size: 16px;
+    }
+}
+
+@media (min-width: 480px){
+    html {
+      font-size: 17px;
+    }
+}
+
+/*the flex-page classes are added in the media queries so these rules apply when the screen size changes*/
+
+@media (min-width: 720px){
+    html {
+      font-size: 18px;
+    }
+    
+  }
+
+
+@media (min-width: 1080px){
+    html {
+      font-size: 19px;
+    }
+    .page {
+      height: 80vh;
+    }
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    }
+
+    .flex-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    }
+    .preview-image {
+      width: 60%;
+    }
+    .preview-copy {
+      width: 40%;
+    }
+    .left-aligned {
+      text-align: left;
+      padding-left: 40px;
+    }
+    .right-aligned {
+      text-align: right;
+      padding-right: 40px;
+    }
+
+    .about-column {
+      width: 40%;
+    }
+    .flex-reverse{
+      flex-direction: row-reverse;
+    }
+
+    .project-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .project-copy {
+      width: 35%; 
+    }
+    .project-images {
+      width: 60%;
+    }
+    .project-images img {
+      margin-top: 0px;
+      margin-bottom: 100px;
+    }
+
+}
